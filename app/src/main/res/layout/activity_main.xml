@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bodor.com.layoutchangesanimation.MainActivity">
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_toLeftOf="@+id/add"
+            android:layout_marginLeft="5dp"
+            android:layout_alignBottom="@+id/add"
+            android:id="@+id/edit"
+            android:background="@android:color/transparent"
+            android:layout_alignParentLeft="true"
+            android:hint="Input Yout Text..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_alignBottom="@+id/add"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:background="#aaa"
+           android:layout_width="wrap_content"
+            android:layout_height="1dp"/>
+        <Button
+            android:background="@android:color/holo_orange_dark"
+            android:id="@+id/add"
+            android:layout_alignParentRight="true"
+            android:text="ADD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+        <LinearLayout
+            android:layout_below="@+id/rl"
+            android:orientation="vertical"
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+
+</RelativeLayout>
